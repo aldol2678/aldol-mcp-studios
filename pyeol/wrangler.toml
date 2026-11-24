@@ -1,4 +1,4 @@
-name = "aldol-pyeol-official-site"
+name = "pyeol-mcp"
 main = "pyeol.mjs"
 compatibility_date = "2026-11-23"
 workers_dev = false
