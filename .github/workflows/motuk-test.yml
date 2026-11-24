@@ -1,0 +1,20 @@
+name: motuk test
+on:
+  push:
+    paths:
+      - 'motuk/**'
+  pull_request:
+    paths:
+      - 'motuk/**'
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: syntax check
+        run: for f in motuk/*.mjs motuk/lib/*.mjs motuk/lib/*.js motuk/public/assets/*.mjs motuk/public/assets/*.js motuk/public/sound-assets/*.js motuk/tests/*.mjs; do node --check "$f"; done
+      - name: integration test
+        run: node motuk/tests/test-motuk.mjs
