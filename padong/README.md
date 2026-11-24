@@ -61,6 +61,10 @@ npx wrangler deploy
 `wrangler.toml`에 비밀 바인딩이 없습니다. 커스텀 도메인은 Cloudflare 대시보드에서
 연결하거나 `wrangler.toml`의 `routes`에 추가하세요.
 
+> 주의: `wrangler.toml`의 name은 라이브 워커 이름과 겹치지 않게 `padong-mcp`로
+> 정해 두었습니다. name을 라이브 워커 이름(`padong-studio`)으로 바꾸어
+> 배포하면 라이브 사이트를 덮어쓰니 바꾸지 마세요.
+
 ## 테스트
 
 ```bash
