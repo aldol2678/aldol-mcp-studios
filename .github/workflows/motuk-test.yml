@@ -15,6 +15,15 @@ jobs:
         with:
           node-version: '24'
       - name: syntax check
-        run: for f in motuk/*.mjs motuk/lib/*.mjs motuk/lib/*.js motuk/public/assets/*.mjs motuk/public/assets/*.js motuk/public/sound-assets/*.js motuk/tests/*.mjs; do node --check "$f"; done
+        shell: bash
+        run: |
+          shopt -s nullglob
+          for f in motuk/*.mjs \
+              motuk/lib/*.mjs motuk/lib/*.js \
+              motuk/public/assets/*.mjs motuk/public/assets/*.js \
+              motuk/public/sound-assets/*.js \
+              motuk/tests/*.mjs; do
+            node --check "$f"
+          done
       - name: integration test
         run: node motuk/tests/test-motuk.mjs
