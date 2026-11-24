@@ -15,6 +15,11 @@ jobs:
         with:
           node-version: '24'
       - name: syntax check
-        run: for f in pyeol/*.mjs pyeol/tests/*.mjs; do node --check "$f"; done
+        shell: bash
+        run: |
+          shopt -s nullglob
+          for f in pyeol/*.mjs pyeol/tests/*.mjs; do
+            node --check "$f"
+          done
       - name: integration test
         run: node pyeol/tests/test-pyeol.mjs
