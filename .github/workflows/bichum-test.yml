@@ -1,0 +1,23 @@
+name: bichum test
+on:
+  push:
+    paths:
+      - 'bichum/**'
+  pull_request:
+    paths:
+      - 'bichum/**'
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: syntax check
+        run: for f in bichum/*.mjs bichum/tests/*.mjs; do node --check "$f"; done
+      - name: integration test
+        run: |
+          node bichum/tests/test-bichum.mjs
+          node bichum/tests/test-audio.mjs
+          node bichum/tests/test-publish.mjs
