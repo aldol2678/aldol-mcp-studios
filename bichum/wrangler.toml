@@ -1,4 +1,4 @@
-name = "aldol-bichum-official-site"
+name = "bichum-mcp"
 main = "bichum.mjs"
 compatibility_date = "2026-11-23"
 workers_dev = false
