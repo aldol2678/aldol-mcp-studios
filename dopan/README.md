@@ -2,12 +2,23 @@
 
 도판(DOPAN, https://dopan.aldol.app) 2D 맵 편집기를 도구 호출로 다루는 MCP 서버입니다. "수풀리에 나무 10그루 심어줘" 같은 요청을 클릭 대신 도구 호출로 수행합니다.
 
-## 상태: 설계 단계
+## 상태: v0.1 구현 완료 (2026-11-25)
 
-- v0.1 설계 완료: 2026-11-25 (`DOPAN-MCP-DESIGN-20261125.md`)
-- 구현: **11/29 이후** (단어연금술 챌린지 마감 이후). 지금 이 폴더에는 코드가 없습니다.
+- 설계: `DOPAN-MCP-DESIGN-20261125.md` (2026-11-25)
+- 구현: `dopan_mcp.py` (공식 Python MCP SDK 2.0.0, 로컬 stdio). 테스트 12개 전부 통과 (L0 검증 픽스처 7개 + L1 stdio 스모크 5개).
 - 전송: 로컬 stdio MCP (MCP Forge 패턴). 도판에 백엔드가 없어 원격 Worker는 v0.2로 미룹니다.
 - 다루는 것: 월드 매니페스트 파일(WorldForge `worldforge/0.1`)만. 정본 파일은 덮어쓰지 않고 `*.edited.json`으로만 내보냅니다.
+
+## 실행하기
+
+```bash
+python3 -m venv venv
+venv/bin/pip install -r requirements.txt   # mcp==2.0.0
+cp -r fixtures worlds                      # 작업용 월드 사본
+venv/bin/python dopan_mcp.py               # stdio 서버 시작 (기본 worlds 디렉토리: ./worlds)
+```
+
+테스트: `venv/bin/pip install pytest pytest-asyncio && venv/bin/python -m pytest tests/ -v`
 
 ## 도구 (v0.1, 8개 — 예정)
 
@@ -30,15 +41,21 @@
 dopan/
   README.md                      # 이 파일
   DOPAN-MCP-DESIGN-20261125.md   # v0.1 설계서 (전송·도구·검증·미결정 5건)
+  dopan_mcp.py                   # MCP 서버 (도구 8개)
+  validate.mjs                   # 검증 브릿지 (에디터 검증 코드를 node로 실행)
+  requirements.txt               # mcp==2.0.0
   fixtures/
     supuli/world.json            # 수풀리 마을 (29개 엔티티)
     star-fishing/world.json      # 별낚시 호수 (13개)
     star-defense/world.json      # 별수호 들판 (6개)
   vendor/
     engine-validation.mjs        # 알돌엔진 WorldForge 검증 코드 원본 (MIT)
+    engine-export.mjs            # checkBase/availableTemplates 원본 (MIT)
+  tests/
+    test_dopan_mcp.py            # L0 + L1 테스트 12개
 ```
 
-`fixtures/`의 월드 JSON은 도판 라이브에서 받은 공개 파일입니다. `vendor/engine-validation.mjs`는 규칙을 베껴 쓰지 않고 원본 그대로 가져다 쓰는 파일입니다 (상류 `df9a4946…`, MIT).
+`fixtures/`의 월드 JSON은 도판 라이브에서 받은 공개 파일입니다. `vendor/engine-validation.mjs`와 `vendor/engine-export.mjs`는 규칙을 베껴 쓰지 않고 원본 그대로 가져다 쓰는 파일입니다 (상류 `df9a4946…`, MIT). `validate.mjs`가 이 둘을 불러 검증합니다.
 
 ## 검증
 

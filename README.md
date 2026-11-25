@@ -15,11 +15,11 @@ Cloudflare Worker + MCP 서버이며, 전부 읽기 전용 초안 도구입니�
 | `padong/` | 파동 — 마케팅 브리프·카피 | https://padong.aldol.app/mcp | 0.4.0 | 5 |
 | `bonsae/` | 본새 — 디자인 분석·스펙 | https://bonsae.aldol.app/mcp | 2.3.0 | 4 |
 | `motuk/` | 모툭 — 에셋 팩토리 | https://motuk.aldol.app/mcp | 0.3.0 | 13 |
-| `dopan/` | 도판 — 2D 맵 편집기 MCP | — (설계 단계, 미배포) | 0.1.0 (설계) | 8 (예정) |
+| `dopan/` | 도판 — 2D 맵 편집기 MCP | — (로컬 stdio, 미배포) | 0.1.0 | 8 |
 | `seum/` | 세움 — 코드 분석·변경 | https://seum.aldol.app/mcp | 0.1.0 | 3 |
 | `majung/` | 마중 — 시장 조사·기회 평가 | https://majung.aldol.app/mcp | 0.1.0 | 3 |
 
-> 현재는 `bichum/`·`pyeol/`·`padong/`·`motuk/` 4곳이 공개되어 있고, `dopan/`은 설계 문서만 있습니다.
+> 현재는 `bichum/`·`pyeol/`·`padong/`·`motuk/` 4곳이 공개되어 있고, `dopan/`은 로컬 stdio 서버(구현 완료, 미배포)입니다.
 > 본새·세움·마중은 검토·분리 작업이 끝나면 같은 구조로 추가합니다.
 > (이 문장은 폴더가 추가될 때마다 업데이트합니다.)
 
@@ -32,7 +32,7 @@ Cloudflare Worker + MCP 서버이며, 전부 읽기 전용 초안 도구입니�
 - `padong/` — Cloudflare API로 회수한 배포 번들(미니파이 단일 파일) 그대로입니다.
   원본 모듈 구조는 남아 있지 않고, 동작은 로컬 테스트로 검증했습니다.
   원본 소스가 확보되면 읽기 좋은 모듈 형태로 교체합니다.
-- `dopan/` — 설계 문서와 검증용 월드 사본만 있습니다. 구현은 11/29 이후입니다. 월드 JSON은 도판 라이브에서 받은 공개 파일이고, `vendor/engine-validation.mjs`는 알돌엔진 WorldForge 검증 코드(MIT) 원본 그대로입니다.
+- `dopan/` — 로컬 stdio MCP 서버입니다. 월드 JSON은 도판 라이브에서 받은 공개 파일이고, `vendor/`의 검증 코드는 알돌엔진 WorldForge 원본(MIT) 그대로입니다.
 - `motuk/` — MCP 부분만 분리한 스탠드얼론 워커입니다. 라이브 워커는
   Next.js(OpenNext) 빌드 번들이라 읽기 좋은 소스로 공개할 수 없어,
   로컬 통합 소스(11/18 P0)의 MCP 핸들러를 가져오고 동작 동등성을
