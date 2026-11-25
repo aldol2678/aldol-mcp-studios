@@ -1,0 +1,1217 @@
+{
+  "assets": [
+    {
+      "id": "angler",
+      "type": "model",
+      "uri": "builtin:angler"
+    },
+    {
+      "id": "fish-small",
+      "type": "model",
+      "uri": "builtin:fish-small"
+    },
+    {
+      "id": "fish-medium",
+      "type": "model",
+      "uri": "builtin:fish-medium"
+    },
+    {
+      "id": "fish-big",
+      "type": "model",
+      "uri": "builtin:fish-big"
+    },
+    {
+      "id": "reed",
+      "type": "model",
+      "uri": "builtin:reed"
+    },
+    {
+      "id": "star-fish",
+      "scale": 1,
+      "type": "model",
+      "uri": "glb:assets/models/star-fish.glb"
+    },
+    {
+      "id": "star-trophy",
+      "scale": 1,
+      "type": "model",
+      "uri": "glb:assets/models/star-trophy.glb"
+    }
+  ],
+  "entities": [
+    {
+      "assetId": "angler",
+      "components": {},
+      "enabled": true,
+      "id": "ent-angler",
+      "name": "낚시꾼",
+      "parentId": null,
+      "tags": [
+        "npc"
+      ],
+      "transform": {
+        "position": [
+          2,
+          0,
+          1
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "type": "entity.npc"
+    },
+    {
+      "assetId": "fish-small",
+      "components": {
+        "game.fish": {
+          "species": "small"
+        }
+      },
+      "enabled": true,
+      "id": "ent-fish-1",
+      "name": "작은 별고기 1",
+      "parentId": null,
+      "tags": [
+        "fish"
+      ],
+      "transform": {
+        "position": [
+          -4,
+          0,
+          -4
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "type": "entity.fish"
+    },
+    {
+      "assetId": "fish-small",
+      "components": {
+        "game.fish": {
+          "species": "small"
+        }
+      },
+      "enabled": true,
+      "id": "ent-fish-2",
+      "name": "작은 별고기 2",
+      "parentId": null,
+      "tags": [
+        "fish"
+      ],
+      "transform": {
+        "position": [
+          3,
+          0,
+          -7
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "type": "entity.fish"
+    },
+    {
+      "assetId": "fish-medium",
+      "components": {
+        "game.fish": {
+          "species": "medium"
+        }
+      },
+      "enabled": true,
+      "id": "ent-fish-3",
+      "name": "중간 별고기 1",
+      "parentId": null,
+      "tags": [
+        "fish"
+      ],
+      "transform": {
+        "position": [
+          0,
+          0,
+          -6
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "type": "entity.fish"
+    },
+    {
+      "assetId": "fish-medium",
+      "components": {
+        "game.fish": {
+          "species": "medium"
+        }
+      },
+      "enabled": true,
+      "id": "ent-fish-4",
+      "name": "중간 별고기 2",
+      "parentId": null,
+      "tags": [
+        "fish"
+      ],
+      "transform": {
+        "position": [
+          4,
+          0,
+          -4
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "type": "entity.fish"
+    },
+    {
+      "assetId": "star-fish",
+      "components": {
+        "game.fish": {
+          "species": "big"
+        }
+      },
+      "enabled": true,
+      "id": "ent-fish-5",
+      "name": "큰 별고기",
+      "parentId": null,
+      "tags": [
+        "fish"
+      ],
+      "transform": {
+        "position": [
+          -2,
+          0,
+          -7
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "type": "entity.fish"
+    },
+    {
+      "assetId": "reed",
+      "components": {},
+      "enabled": true,
+      "id": "ent-reed-1",
+      "name": "갈대 1",
+      "parentId": null,
+      "tags": [
+        "decor"
+      ],
+      "transform": {
+        "position": [
+          -5,
+          0,
+          0.5
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "type": "entity.reed"
+    },
+    {
+      "assetId": "reed",
+      "components": {},
+      "enabled": true,
+      "id": "ent-reed-2",
+      "name": "갈대 2",
+      "parentId": null,
+      "tags": [
+        "decor"
+      ],
+      "transform": {
+        "position": [
+          -3,
+          0,
+          0.3
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "type": "entity.reed"
+    },
+    {
+      "assetId": "reed",
+      "components": {},
+      "enabled": true,
+      "id": "ent-reed-3",
+      "name": "갈대 3",
+      "parentId": null,
+      "tags": [
+        "decor"
+      ],
+      "transform": {
+        "position": [
+          -1,
+          0,
+          0.5
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "type": "entity.reed"
+    },
+    {
+      "assetId": "reed",
+      "components": {},
+      "enabled": true,
+      "id": "ent-reed-4",
+      "name": "갈대 4",
+      "parentId": null,
+      "tags": [
+        "decor"
+      ],
+      "transform": {
+        "position": [
+          3,
+          0,
+          0.5
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "type": "entity.reed"
+    },
+    {
+      "assetId": "reed",
+      "components": {},
+      "enabled": true,
+      "id": "ent-reed-5",
+      "name": "갈대 5",
+      "parentId": null,
+      "tags": [
+        "decor"
+      ],
+      "transform": {
+        "position": [
+          5,
+          0,
+          0.3
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "type": "entity.reed"
+    },
+    {
+      "assetId": "reed",
+      "components": {},
+      "enabled": true,
+      "id": "ent-reed-6",
+      "name": "갈대 6",
+      "parentId": null,
+      "tags": [
+        "decor"
+      ],
+      "transform": {
+        "position": [
+          7,
+          0,
+          0.5
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "type": "entity.reed"
+    },
+    {
+      "assetId": "star-trophy",
+      "components": {},
+      "enabled": true,
+      "id": "ent-star-trophy",
+      "name": "별 트로피",
+      "parentId": null,
+      "tags": [
+        "trophy"
+      ],
+      "transform": {
+        "position": [
+          0,
+          2.2,
+          -5
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "type": "entity.trophy"
+    }
+  ],
+  "events": [],
+  "npcs": [
+    {
+      "behavior": {
+        "interaction": "talk",
+        "movement": "patrol",
+        "params": {
+          "sight": 5
+        }
+      },
+      "entityId": "ent-angler",
+      "homePlaceId": "angler-home",
+      "id": "angler-1",
+      "name": "낚시꾼",
+      "profile": {
+        "affiliation": "star-fishing",
+        "attributes": {
+          "hp": 100
+        },
+        "role": "angler"
+      },
+      "schedule": [
+        {
+          "action": "patrol",
+          "end": "20:00",
+          "start": "08:00",
+          "target": "angler-home"
+        }
+      ]
+    },
+    {
+      "behavior": {
+        "interaction": "none",
+        "movement": "swim",
+        "params": {
+          "sight": 6,
+          "species": "small",
+          "speed": 0.03
+        }
+      },
+      "entityId": "ent-fish-1",
+      "homePlaceId": "wp-l0",
+      "id": "fish-1",
+      "name": "작은 별고기 1",
+      "profile": {
+        "affiliation": "star-fishing",
+        "attributes": {
+          "hp": 10
+        },
+        "role": "fish"
+      },
+      "schedule": [
+        {
+          "action": "patrol",
+          "end": "22:00",
+          "start": "06:00",
+          "target": "wp-l0"
+        }
+      ]
+    },
+    {
+      "behavior": {
+        "interaction": "none",
+        "movement": "swim",
+        "params": {
+          "sight": 6,
+          "species": "small",
+          "speed": 0.03
+        }
+      },
+      "entityId": "ent-fish-2",
+      "homePlaceId": "wp-l4",
+      "id": "fish-2",
+      "name": "작은 별고기 2",
+      "profile": {
+        "affiliation": "star-fishing",
+        "attributes": {
+          "hp": 10
+        },
+        "role": "fish"
+      },
+      "schedule": [
+        {
+          "action": "patrol",
+          "end": "22:00",
+          "start": "06:00",
+          "target": "wp-l4"
+        }
+      ]
+    },
+    {
+      "behavior": {
+        "interaction": "none",
+        "movement": "swim",
+        "params": {
+          "sight": 6,
+          "species": "medium",
+          "speed": 0.04
+        }
+      },
+      "entityId": "ent-fish-3",
+      "homePlaceId": "wp-l1",
+      "id": "fish-3",
+      "name": "중간 별고기 1",
+      "profile": {
+        "affiliation": "star-fishing",
+        "attributes": {
+          "hp": 10
+        },
+        "role": "fish"
+      },
+      "schedule": [
+        {
+          "action": "patrol",
+          "end": "22:00",
+          "start": "06:00",
+          "target": "wp-l1"
+        }
+      ]
+    },
+    {
+      "behavior": {
+        "interaction": "none",
+        "movement": "swim",
+        "params": {
+          "sight": 6,
+          "species": "medium",
+          "speed": 0.04
+        }
+      },
+      "entityId": "ent-fish-4",
+      "homePlaceId": "wp-l2",
+      "id": "fish-4",
+      "name": "중간 별고기 2",
+      "profile": {
+        "affiliation": "star-fishing",
+        "attributes": {
+          "hp": 10
+        },
+        "role": "fish"
+      },
+      "schedule": [
+        {
+          "action": "patrol",
+          "end": "22:00",
+          "start": "06:00",
+          "target": "wp-l2"
+        }
+      ]
+    },
+    {
+      "behavior": {
+        "interaction": "none",
+        "movement": "swim",
+        "params": {
+          "sight": 6,
+          "species": "big",
+          "speed": 0.05
+        }
+      },
+      "entityId": "ent-fish-5",
+      "homePlaceId": "wp-l3",
+      "id": "fish-5",
+      "name": "큰 별고기",
+      "profile": {
+        "affiliation": "star-fishing",
+        "attributes": {
+          "hp": 10
+        },
+        "role": "fish"
+      },
+      "schedule": [
+        {
+          "action": "patrol",
+          "end": "22:00",
+          "start": "06:00",
+          "target": "wp-l3"
+        }
+      ]
+    }
+  ],
+  "paths": [
+    {
+      "enabled": true,
+      "from": "wp-0",
+      "id": "path-wp0-wp1",
+      "modes": [
+        "walk",
+        "npc"
+      ],
+      "name": "길 0-1",
+      "oneWay": false,
+      "points": [
+        [
+          0,
+          0,
+          2
+        ],
+        [
+          -4,
+          0,
+          4
+        ]
+      ],
+      "to": "wp-1",
+      "type": "path.walk",
+      "widthMeters": 2
+    },
+    {
+      "enabled": true,
+      "from": "wp-0",
+      "id": "path-wp0-wp2",
+      "modes": [
+        "walk",
+        "npc"
+      ],
+      "name": "길 0-2",
+      "oneWay": false,
+      "points": [
+        [
+          0,
+          0,
+          2
+        ],
+        [
+          4,
+          0,
+          4
+        ]
+      ],
+      "to": "wp-2",
+      "type": "path.walk",
+      "widthMeters": 2
+    },
+    {
+      "enabled": true,
+      "from": "wp-0",
+      "id": "path-wp0-dock",
+      "modes": [
+        "walk",
+        "npc"
+      ],
+      "name": "길 0-선착장",
+      "oneWay": false,
+      "points": [
+        [
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "to": "dock",
+      "type": "path.walk",
+      "widthMeters": 2
+    },
+    {
+      "enabled": true,
+      "from": "dock",
+      "id": "path-dock-dockend",
+      "modes": [
+        "walk"
+      ],
+      "name": "선착장-끝",
+      "oneWay": false,
+      "points": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          -5
+        ]
+      ],
+      "to": "dock-end",
+      "type": "path.walk",
+      "widthMeters": 2
+    },
+    {
+      "enabled": true,
+      "from": "wp-l0",
+      "id": "path-wl0-wl1",
+      "modes": [
+        "npc"
+      ],
+      "name": "호수 0-1",
+      "oneWay": false,
+      "points": [
+        [
+          -4,
+          0,
+          -4
+        ],
+        [
+          0,
+          0,
+          -6
+        ]
+      ],
+      "to": "wp-l1",
+      "type": "path.swim",
+      "widthMeters": 2
+    },
+    {
+      "enabled": true,
+      "from": "wp-l1",
+      "id": "path-wl1-wl2",
+      "modes": [
+        "npc"
+      ],
+      "name": "호수 1-2",
+      "oneWay": false,
+      "points": [
+        [
+          0,
+          0,
+          -6
+        ],
+        [
+          4,
+          0,
+          -4
+        ]
+      ],
+      "to": "wp-l2",
+      "type": "path.swim",
+      "widthMeters": 2
+    },
+    {
+      "enabled": true,
+      "from": "wp-l0",
+      "id": "path-wl0-wl3",
+      "modes": [
+        "npc"
+      ],
+      "name": "호수 0-3",
+      "oneWay": false,
+      "points": [
+        [
+          -4,
+          0,
+          -4
+        ],
+        [
+          -2,
+          0,
+          -7
+        ]
+      ],
+      "to": "wp-l3",
+      "type": "path.swim",
+      "widthMeters": 2
+    },
+    {
+      "enabled": true,
+      "from": "wp-l1",
+      "id": "path-wl1-wl3",
+      "modes": [
+        "npc"
+      ],
+      "name": "호수 1-3",
+      "oneWay": false,
+      "points": [
+        [
+          0,
+          0,
+          -6
+        ],
+        [
+          -2,
+          0,
+          -7
+        ]
+      ],
+      "to": "wp-l3",
+      "type": "path.swim",
+      "widthMeters": 2
+    },
+    {
+      "enabled": true,
+      "from": "wp-l1",
+      "id": "path-wl1-wl4",
+      "modes": [
+        "npc"
+      ],
+      "name": "호수 1-4",
+      "oneWay": false,
+      "points": [
+        [
+          0,
+          0,
+          -6
+        ],
+        [
+          3,
+          0,
+          -7
+        ]
+      ],
+      "to": "wp-l4",
+      "type": "path.swim",
+      "widthMeters": 2
+    },
+    {
+      "enabled": true,
+      "from": "wp-l2",
+      "id": "path-wl2-wl4",
+      "modes": [
+        "npc"
+      ],
+      "name": "호수 2-4",
+      "oneWay": false,
+      "points": [
+        [
+          4,
+          0,
+          -4
+        ],
+        [
+          3,
+          0,
+          -7
+        ]
+      ],
+      "to": "wp-l4",
+      "type": "path.swim",
+      "widthMeters": 2
+    }
+  ],
+  "places": [
+    {
+      "id": "spawn",
+      "name": "호숫가 입구",
+      "position": [
+        0,
+        0,
+        2
+      ],
+      "type": "place.spawn",
+      "zoneId": "shore"
+    },
+    {
+      "id": "wp-0",
+      "name": "길 0",
+      "position": [
+        0,
+        0,
+        2
+      ],
+      "type": "nav.waypoint",
+      "zoneId": "shore"
+    },
+    {
+      "id": "wp-1",
+      "name": "길 1",
+      "position": [
+        -4,
+        0,
+        4
+      ],
+      "type": "nav.waypoint",
+      "zoneId": "shore"
+    },
+    {
+      "id": "wp-2",
+      "name": "길 2",
+      "position": [
+        4,
+        0,
+        4
+      ],
+      "type": "nav.waypoint",
+      "zoneId": "shore"
+    },
+    {
+      "id": "dock",
+      "name": "선착장",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "type": "place.dock",
+      "zoneId": "shore"
+    },
+    {
+      "id": "dock-end",
+      "name": "선착장 끝",
+      "position": [
+        0,
+        0,
+        -5
+      ],
+      "type": "place.dock-end",
+      "zoneId": "lake"
+    },
+    {
+      "id": "wp-l0",
+      "name": "호수 0",
+      "position": [
+        -4,
+        0,
+        -4
+      ],
+      "type": "nav.waypoint",
+      "zoneId": "lake"
+    },
+    {
+      "id": "wp-l1",
+      "name": "호수 1",
+      "position": [
+        0,
+        0,
+        -6
+      ],
+      "type": "nav.waypoint",
+      "zoneId": "lake"
+    },
+    {
+      "id": "wp-l2",
+      "name": "호수 2",
+      "position": [
+        4,
+        0,
+        -4
+      ],
+      "type": "nav.waypoint",
+      "zoneId": "lake"
+    },
+    {
+      "id": "wp-l3",
+      "name": "호수 3",
+      "position": [
+        -2,
+        0,
+        -7
+      ],
+      "type": "nav.waypoint",
+      "zoneId": "lake"
+    },
+    {
+      "id": "wp-l4",
+      "name": "호수 4",
+      "position": [
+        3,
+        0,
+        -7
+      ],
+      "type": "nav.waypoint",
+      "zoneId": "lake"
+    },
+    {
+      "id": "angler-home",
+      "name": "낚시꾼 자리",
+      "position": [
+        2,
+        0,
+        1
+      ],
+      "type": "place.home",
+      "zoneId": "shore"
+    }
+  ],
+  "project": {
+    "id": "star-fishing",
+    "name": "별낚시"
+  },
+  "quests": [
+    {
+      "edges": [
+        {
+          "from": "start",
+          "to": "talk"
+        },
+        {
+          "from": "talk",
+          "to": "done"
+        }
+      ],
+      "id": "talk-to-angler",
+      "name": "낚시꾼과 대화하기",
+      "nodes": [
+        {
+          "id": "start",
+          "type": "quest.start"
+        },
+        {
+          "id": "talk",
+          "params": {
+            "npcId": "angler-1",
+            "range": 1.5
+          },
+          "type": "quest.talk"
+        },
+        {
+          "id": "done",
+          "type": "quest.complete"
+        }
+      ],
+      "type": "quest.talk"
+    },
+    {
+      "edges": [
+        {
+          "from": "start",
+          "to": "catch"
+        },
+        {
+          "from": "catch",
+          "to": "done"
+        }
+      ],
+      "id": "catch-star-fish",
+      "name": "별고기 3마리 낚기",
+      "nodes": [
+        {
+          "id": "start",
+          "type": "quest.start"
+        },
+        {
+          "id": "catch",
+          "params": {
+            "count": 3
+          },
+          "type": "quest.catch"
+        },
+        {
+          "id": "done",
+          "type": "quest.complete"
+        }
+      ],
+      "type": "quest.catch"
+    },
+    {
+      "edges": [
+        {
+          "from": "start",
+          "to": "arrive"
+        },
+        {
+          "from": "arrive",
+          "to": "done"
+        }
+      ],
+      "id": "reach-dock-end",
+      "name": "선착장 끝에 가기",
+      "nodes": [
+        {
+          "id": "start",
+          "type": "quest.start"
+        },
+        {
+          "id": "arrive",
+          "params": {
+            "placeId": "dock-end",
+            "range": 1.5
+          },
+          "type": "quest.arrive"
+        },
+        {
+          "id": "done",
+          "type": "quest.complete"
+        }
+      ],
+      "type": "quest.arrive"
+    }
+  ],
+  "rules": [
+    {
+      "config": {
+        "biteBaseTicks": 90,
+        "biteRandomTicks": 120,
+        "castCooldownTicks": 60,
+        "fishRespawnTicks": 600,
+        "species": {
+          "big": {
+            "biteWindowTicks": 20,
+            "score": 40
+          },
+          "medium": {
+            "biteWindowTicks": 30,
+            "score": 20
+          },
+          "small": {
+            "biteWindowTicks": 45,
+            "score": 10
+          }
+        }
+      },
+      "enabled": true,
+      "id": "fishing",
+      "type": "game.fishing"
+    }
+  ],
+  "schemaVersion": "worldforge/0.1",
+  "world": {
+    "description": "M2 두 번째 게임 — 호수 낚시",
+    "id": "star-fishing-lake",
+    "name": "별낚시 호수",
+    "version": "0.1.0"
+  },
+  "zones": [
+    {
+      "geometry": {
+        "points": [
+          [
+            -6,
+            0
+          ],
+          [
+            10,
+            0
+          ],
+          [
+            10,
+            8
+          ],
+          [
+            -6,
+            8
+          ]
+        ],
+        "space": "local",
+        "type": "polygon"
+      },
+      "id": "shore",
+      "name": "호숫가",
+      "type": "zone.shore"
+    },
+    {
+      "geometry": {
+        "points": [
+          [
+            -6,
+            -8
+          ],
+          [
+            10,
+            -8
+          ],
+          [
+            10,
+            0
+          ],
+          [
+            -6,
+            0
+          ]
+        ],
+        "space": "local",
+        "type": "polygon"
+      },
+      "id": "lake",
+      "name": "호수",
+      "type": "zone.lake"
+    }
+  ]
+}

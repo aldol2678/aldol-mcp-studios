@@ -1,0 +1,759 @@
+{
+  "assets": [
+    {
+      "id": "star-trophy",
+      "scale": 1,
+      "type": "model",
+      "uri": "glb:assets/models/star-trophy.glb"
+    },
+    {
+      "id": "tree",
+      "type": "model",
+      "uri": "builtin:tree"
+    }
+  ],
+  "entities": [
+    {
+      "assetId": "star-trophy",
+      "components": {},
+      "enabled": true,
+      "id": "ent-shrine-trophy",
+      "name": "별 제단 트로피",
+      "parentId": null,
+      "tags": [
+        "trophy"
+      ],
+      "transform": {
+        "position": [
+          8,
+          2.2,
+          -3
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "type": "entity.trophy"
+    },
+    {
+      "assetId": "tree",
+      "components": {},
+      "enabled": true,
+      "id": "ent-tree-1",
+      "name": "나무 1",
+      "parentId": null,
+      "tags": [
+        "decor"
+      ],
+      "transform": {
+        "position": [
+          -7,
+          0,
+          4
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "type": "entity.tree"
+    },
+    {
+      "assetId": "tree",
+      "components": {},
+      "enabled": true,
+      "id": "ent-tree-2",
+      "name": "나무 2",
+      "parentId": null,
+      "tags": [
+        "decor"
+      ],
+      "transform": {
+        "position": [
+          5,
+          0,
+          5
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "type": "entity.tree"
+    },
+    {
+      "assetId": "tree",
+      "components": {},
+      "enabled": true,
+      "id": "ent-tree-3",
+      "name": "나무 3",
+      "parentId": null,
+      "tags": [
+        "decor"
+      ],
+      "transform": {
+        "position": [
+          -7,
+          0,
+          -4
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "type": "entity.tree"
+    },
+    {
+      "assetId": "tree",
+      "components": {},
+      "enabled": true,
+      "id": "ent-tree-4",
+      "name": "나무 4",
+      "parentId": null,
+      "tags": [
+        "decor"
+      ],
+      "transform": {
+        "position": [
+          8,
+          0,
+          4
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "type": "entity.tree"
+    },
+    {
+      "assetId": "tree",
+      "components": {},
+      "enabled": true,
+      "id": "ent-tree-5",
+      "name": "나무 5",
+      "parentId": null,
+      "tags": [
+        "decor"
+      ],
+      "transform": {
+        "position": [
+          -1,
+          0,
+          -5
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "type": "entity.tree"
+    }
+  ],
+  "events": [],
+  "npcs": [],
+  "paths": [
+    {
+      "enabled": true,
+      "from": "wp-gate",
+      "id": "path-gate-a",
+      "modes": [
+        "npc"
+      ],
+      "name": "문-가",
+      "oneWay": true,
+      "points": [
+        [
+          -8,
+          0,
+          0
+        ],
+        [
+          -4,
+          0,
+          0
+        ]
+      ],
+      "to": "wp-a",
+      "type": "path.walk",
+      "widthMeters": 2
+    },
+    {
+      "enabled": true,
+      "from": "wp-a",
+      "id": "path-a-b",
+      "modes": [
+        "npc"
+      ],
+      "name": "가-나",
+      "oneWay": true,
+      "points": [
+        [
+          -4,
+          0,
+          0
+        ],
+        [
+          -4,
+          0,
+          3
+        ]
+      ],
+      "to": "wp-b",
+      "type": "path.walk",
+      "widthMeters": 2
+    },
+    {
+      "enabled": true,
+      "from": "wp-b",
+      "id": "path-b-c",
+      "modes": [
+        "npc"
+      ],
+      "name": "나-다",
+      "oneWay": true,
+      "points": [
+        [
+          -4,
+          0,
+          3
+        ],
+        [
+          2,
+          0,
+          3
+        ]
+      ],
+      "to": "wp-c",
+      "type": "path.walk",
+      "widthMeters": 2
+    },
+    {
+      "enabled": true,
+      "from": "wp-c",
+      "id": "path-c-d",
+      "modes": [
+        "npc"
+      ],
+      "name": "다-라",
+      "oneWay": true,
+      "points": [
+        [
+          2,
+          0,
+          3
+        ],
+        [
+          2,
+          0,
+          -3
+        ]
+      ],
+      "to": "wp-d",
+      "type": "path.walk",
+      "widthMeters": 2
+    },
+    {
+      "enabled": true,
+      "from": "wp-d",
+      "id": "path-d-e",
+      "modes": [
+        "npc"
+      ],
+      "name": "라-마",
+      "oneWay": true,
+      "points": [
+        [
+          2,
+          0,
+          -3
+        ],
+        [
+          6,
+          0,
+          -3
+        ]
+      ],
+      "to": "wp-e",
+      "type": "path.walk",
+      "widthMeters": 2
+    },
+    {
+      "enabled": true,
+      "from": "wp-e",
+      "id": "path-e-shrine",
+      "modes": [
+        "npc"
+      ],
+      "name": "마-제단",
+      "oneWay": true,
+      "points": [
+        [
+          6,
+          0,
+          -3
+        ],
+        [
+          8,
+          0,
+          -3
+        ]
+      ],
+      "to": "wp-shrine",
+      "type": "path.walk",
+      "widthMeters": 2
+    }
+  ],
+  "places": [
+    {
+      "id": "spawn",
+      "name": "서쪽 문",
+      "position": [
+        -8,
+        0,
+        0
+      ],
+      "type": "place.spawn",
+      "zoneId": "field"
+    },
+    {
+      "id": "wp-gate",
+      "name": "문",
+      "position": [
+        -8,
+        0,
+        0
+      ],
+      "type": "nav.waypoint",
+      "zoneId": "field"
+    },
+    {
+      "id": "wp-a",
+      "name": "갈림 가",
+      "position": [
+        -4,
+        0,
+        0
+      ],
+      "type": "nav.waypoint",
+      "zoneId": "field"
+    },
+    {
+      "id": "wp-b",
+      "name": "갈림 나",
+      "position": [
+        -4,
+        0,
+        3
+      ],
+      "type": "nav.waypoint",
+      "zoneId": "field"
+    },
+    {
+      "id": "wp-c",
+      "name": "갈림 다",
+      "position": [
+        2,
+        0,
+        3
+      ],
+      "type": "nav.waypoint",
+      "zoneId": "field"
+    },
+    {
+      "id": "wp-d",
+      "name": "갈림 라",
+      "position": [
+        2,
+        0,
+        -3
+      ],
+      "type": "nav.waypoint",
+      "zoneId": "field"
+    },
+    {
+      "id": "wp-e",
+      "name": "갈림 마",
+      "position": [
+        6,
+        0,
+        -3
+      ],
+      "type": "nav.waypoint",
+      "zoneId": "field"
+    },
+    {
+      "id": "wp-shrine",
+      "name": "제단 앞",
+      "position": [
+        8,
+        0,
+        -3
+      ],
+      "type": "nav.waypoint",
+      "zoneId": "field"
+    },
+    {
+      "id": "shrine",
+      "name": "별 제단",
+      "position": [
+        8,
+        0,
+        -3
+      ],
+      "type": "place.shrine",
+      "zoneId": "field"
+    },
+    {
+      "id": "spot-1",
+      "name": "터 1",
+      "position": [
+        -6,
+        0,
+        2
+      ],
+      "type": "place.build",
+      "zoneId": "field"
+    },
+    {
+      "id": "spot-2",
+      "name": "터 2",
+      "position": [
+        -2,
+        0,
+        1.5
+      ],
+      "type": "place.build",
+      "zoneId": "field"
+    },
+    {
+      "id": "spot-3",
+      "name": "터 3",
+      "position": [
+        0,
+        0,
+        1
+      ],
+      "type": "place.build",
+      "zoneId": "field"
+    },
+    {
+      "id": "spot-4",
+      "name": "터 4",
+      "position": [
+        4,
+        0,
+        1
+      ],
+      "type": "place.build",
+      "zoneId": "field"
+    },
+    {
+      "id": "spot-5",
+      "name": "터 5",
+      "position": [
+        0,
+        0,
+        -1.5
+      ],
+      "type": "place.build",
+      "zoneId": "field"
+    },
+    {
+      "id": "spot-6",
+      "name": "터 6",
+      "position": [
+        4,
+        0,
+        -1.5
+      ],
+      "type": "place.build",
+      "zoneId": "field"
+    },
+    {
+      "id": "spot-7",
+      "name": "터 7",
+      "position": [
+        7,
+        0,
+        -1
+      ],
+      "type": "place.build",
+      "zoneId": "field"
+    }
+  ],
+  "project": {
+    "id": "star-defense",
+    "name": "별수호 디펜스"
+  },
+  "quests": [
+    {
+      "edges": [
+        {
+          "from": "start",
+          "to": "build"
+        },
+        {
+          "from": "build",
+          "to": "done"
+        }
+      ],
+      "id": "place-first-tower",
+      "name": "첫 별탑 배치하기",
+      "nodes": [
+        {
+          "id": "start",
+          "type": "quest.start"
+        },
+        {
+          "id": "build",
+          "params": {
+            "count": 1
+          },
+          "type": "quest.build"
+        },
+        {
+          "id": "done",
+          "type": "quest.complete"
+        }
+      ],
+      "type": "quest.build"
+    },
+    {
+      "edges": [
+        {
+          "from": "start",
+          "to": "wave"
+        },
+        {
+          "from": "wave",
+          "to": "done"
+        }
+      ],
+      "id": "clear-wave-1",
+      "name": "1웨이브 막기",
+      "nodes": [
+        {
+          "id": "start",
+          "type": "quest.start"
+        },
+        {
+          "id": "wave",
+          "params": {
+            "wave": 1
+          },
+          "type": "quest.wave"
+        },
+        {
+          "id": "done",
+          "type": "quest.complete"
+        }
+      ],
+      "type": "quest.wave"
+    },
+    {
+      "edges": [
+        {
+          "from": "start",
+          "to": "defeat"
+        },
+        {
+          "from": "defeat",
+          "to": "done"
+        }
+      ],
+      "id": "defeat-20",
+      "name": "그림자 20마리 처치하기",
+      "nodes": [
+        {
+          "id": "start",
+          "type": "quest.start"
+        },
+        {
+          "id": "defeat",
+          "params": {
+            "count": 20
+          },
+          "type": "quest.defeat"
+        },
+        {
+          "id": "done",
+          "type": "quest.complete"
+        }
+      ],
+      "type": "quest.defeat"
+    }
+  ],
+  "rules": [
+    {
+      "config": {
+        "buildSpots": [
+          "spot-1",
+          "spot-2",
+          "spot-3",
+          "spot-4",
+          "spot-5",
+          "spot-6",
+          "spot-7"
+        ],
+        "enemies": {
+          "brute": {
+            "hp": 60,
+            "leak": 2,
+            "reward": 20,
+            "speed": 0.02
+          },
+          "swift": {
+            "hp": 12,
+            "leak": 1,
+            "reward": 10,
+            "speed": 0.05
+          },
+          "wisp": {
+            "hp": 20,
+            "leak": 1,
+            "reward": 8,
+            "speed": 0.03
+          }
+        },
+        "path": [
+          "wp-gate",
+          "wp-a",
+          "wp-b",
+          "wp-c",
+          "wp-d",
+          "wp-e",
+          "wp-shrine"
+        ],
+        "shrineHp": 10,
+        "spawnIntervalTicks": 45,
+        "spawnJitterTicks": 10,
+        "startStars": 100,
+        "towers": {
+          "moon": {
+            "cooldownTicks": 60,
+            "cost": 60,
+            "damage": 30,
+            "projectileSpeed": 0.15,
+            "range": 4
+          },
+          "star": {
+            "cooldownTicks": 30,
+            "cost": 30,
+            "damage": 10,
+            "projectileSpeed": 0.15,
+            "range": 3
+          }
+        },
+        "waveClearBonus": 20,
+        "waves": [
+          {
+            "wisp": 5
+          },
+          {
+            "swift": 2,
+            "wisp": 7
+          },
+          {
+            "brute": 1,
+            "swift": 3,
+            "wisp": 8
+          },
+          {
+            "brute": 2,
+            "swift": 4,
+            "wisp": 10
+          },
+          {
+            "brute": 3,
+            "swift": 5,
+            "wisp": 12
+          }
+        ]
+      },
+      "enabled": true,
+      "id": "defense",
+      "type": "game.defense"
+    }
+  ],
+  "schemaVersion": "worldforge/0.1",
+  "world": {
+    "description": "M3 세 번째 게임 — 별 제단을 지키는 타워 디펜스",
+    "id": "star-defense-field",
+    "name": "별수호 들판",
+    "version": "0.1.0"
+  },
+  "zones": [
+    {
+      "geometry": {
+        "points": [
+          [
+            -9,
+            -6
+          ],
+          [
+            9,
+            -6
+          ],
+          [
+            9,
+            6
+          ],
+          [
+            -9,
+            6
+          ]
+        ],
+        "space": "local",
+        "type": "polygon"
+      },
+      "id": "field",
+      "name": "별수호 들판",
+      "type": "zone.field"
+    }
+  ]
+}
